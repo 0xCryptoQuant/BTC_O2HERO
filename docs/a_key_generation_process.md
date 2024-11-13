@@ -2,7 +2,7 @@
 
 ![Alt text](../imgs/entropy2masterk.jpg)
 
-## 1.From Entropy to Mnemonics
+## 1. From Entropy to Mnemonics
 
 - What's entropy?
 
