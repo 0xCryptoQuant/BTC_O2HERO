@@ -47,6 +47,6 @@ fn main() {
     
     let (master_private_key, master_chain_code) = masterkey_from_seed(&seed);
 
-    println!("Master Private Key: {:x?}", encode(master_private_key.clone()));
+    println!("Master Private Key: {:x?}", encode(master_private_key.clone())); // it can be checked at: https://learnmeabitcoin.com/technical/keys/hd-wallets/extended-keys/
     println!("Master Chain Code: {:x?}", encode(master_chain_code.clone()));
 }
