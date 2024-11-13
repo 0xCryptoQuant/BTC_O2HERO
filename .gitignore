@@ -1,5 +1,5 @@
 # Binaries for programs and libraries
-/target/
+**/target/
 
 # Rust's package manager lockfile (if you don't want to commit dependencies' versions)
 # Alternatively, if you want to track exact versions of dependencies, you can leave this out
