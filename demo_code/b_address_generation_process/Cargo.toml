@@ -1,0 +1,19 @@
+[package]
+name = "b_address_generation_process"
+version = "0.1.0"
+edition = "2021"
+
+description = "Generate address from seed"
+authors = ["Crypto Quant <yaotux8@gmail.com>"]
+
+[dependencies]
+ripemd = "0.1.3"  # Use ripemd v0.1.3
+secp256k1 = "0.24"  # For elliptic curve cryptography
+base58 = "0.1"  # Base58 encoding
+hex = "0.4"          # For hexadecimal encoding
+bip32 = { version = "0.2.2", features = ["alloc"] }
+hmac = "0.12"
+num-bigint = "0.4"
+sha2 = { version = "0.10", default-features = false }
+num-traits = "0.2"
+bitcoin = "0.26"
