@@ -13,6 +13,7 @@
 *.pdb
 *.ilk
 *.pdb
+*.txt
 
 # IDE and Editor settings (optional)
 .idea/              # IntelliJ-based IDEs (e.g., CLion, IntelliJ)
