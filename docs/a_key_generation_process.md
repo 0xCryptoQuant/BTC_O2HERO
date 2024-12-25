@@ -31,13 +31,3 @@
 - What's HD wallet?
 
     An HD wallet (Hierarchical Deterministic wallet) is a type of wallet that generates a tree of keys from a single seed. This allows for the generation of many addresses and private keys from one seed, enabling easier backup and key management.
-
-- How does BIP32 define the HD wallet structure?
-
-    BIP 32 defines the standard for HD wallets, specifying how to generate a tree of keys from a master key. It uses a derivation path and a combination of HMAC-SHA512 to derive child keys from the master key. BIP 32 allows for the creation of both public and private key chains, enabling the generation of addresses without exposing private keys.
-
-## 4. From Master Key to Address
-
-- How does BIP44 establish a standard derivation path for legacy Bitcoin addresses?
-    
-  BIP 44 (Bitcoin Improvement Proposal 44) defines a standard derivation path for HD wallets to generate Bitcoin addresses. It specifies a hierarchical structure that organizes keys by purpose, coin type, account, change, and index, ensuring consistent address generation for legacy Bitcoin (P2PKH) addresses. This standard allows multiple wallets to be derived from a single seed phrase, making key management and recovery easier across platforms.
