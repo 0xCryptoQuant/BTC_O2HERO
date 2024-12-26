@@ -16,14 +16,14 @@ fn main() {
     let preimage_hex = bytes_to_hex(preimage);
     
     // sha256 digest of the preimage
-    let lock = sha256::Hash::hash(& hex_to_bytes(&preimage_hex)); // &[u8] for input
+    let lock = sha256::Hash::hash(preimage); // &[u8] for input
     let lock_hex = bytes_to_hex(&lock);
 
     // bitcoin script: OP_SHA256 <lock_hex> OP_EQUAL 
     let redeem_script_hex = format!("{}{}{}{}", "a8", "20", lock_hex, "87");
     println!("redeem script is: {:?}", redeem_script_hex);
 
-    // tx for locking 3.000001BTC to the "p2sh" address:
+    // tx for locking BTC to the "p2sh" address:
     let funding_txid_be = "dd986640889214c882033c1bf3f6b91d26415b3bbdc826dc854bd9bf9e45f8af"; // big endian
     let funding_txid_le: Vec<u8> = hex_to_bytes(funding_txid_be).into_iter().rev().collect(); // little endian
     let funding_txid_le_hex = bytes_to_hex(&funding_txid_le);
