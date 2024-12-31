@@ -1,0 +1,11 @@
+[package]
+name = "d_segwit_tx_parse"
+version = "0.1.0"
+edition = "2021"
+
+description = "segwit P2SH script encode & decode"
+authors = ["Crypto Quant <yaotux8@gmail.com>"]
+
+[dependencies]
+hex = "0.4"
+bitcoin = "0.26"
